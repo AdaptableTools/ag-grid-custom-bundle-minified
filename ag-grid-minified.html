@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AG Grid minified custom UMD bundle</title>
+    <link href="./node_modules/@ag-grid-community/styles/ag-grid.css" rel="stylesheet" />
+    <link href="./node_modules/@ag-grid-community/styles/ag-theme-quartz.css" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-flow: column;
+      }
+
+      #grid {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid" class="ag-theme-quartz"></div>
+
+    <script src="./dist/agGridBundle.umd.js"></script>
+    <script src="rowData.js"></script>
+    <script src="./ag-grid-minified.js"></script>
+  </body>
+</html>
